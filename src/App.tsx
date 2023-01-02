@@ -1,13 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import * as P from './Pages';
+import theme from './Shared/Styles/Theme';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="*" element={<P.Main />} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <P.Main />
+    </ThemeProvider>
   );
 }

@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import GlobalStyled from './Shared/Styles/GlobalStyle';
+import GlobalStyled from './shared/styles/global.style';
 import App from './App';
 
 const root = ReactDOM.createRoot(

@@ -8,7 +8,12 @@ const GlobalStyled = createGlobalStyle`
     // css 초기값 정의
     ${reset}
 
-    // 따로 스타일링
+    * {
+        line-height: 135%;
+        letter-spacing: -1%;
+    }
+
+    // 폰트
     @font-face {
         font-family: 'PretendardBold';
         src: local('PretendardBold'), local('PretendardBold');
@@ -27,7 +32,6 @@ const GlobalStyled = createGlobalStyle`
         font-style: normal;
         src: url(${PretendardMedium}) format('woff');
   }
-
 `;
 
 export default GlobalStyled;

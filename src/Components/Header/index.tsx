@@ -5,9 +5,16 @@ import Button from '../Common/Button';
 
 export default function Header() {
   return (
-    <S.HeaderFrame>
-      <S.Logo src={Logo} />
-      <Button onClick={() => console.log('click')} title="button" />
-    </S.HeaderFrame>
+    <S.Header>
+      <S.InnerFrame>
+        <S.Logo src={Logo} />
+        <S.Nav>
+          <Button onClick={() => console.log('click')} title="팀 소개" />
+          <Button onClick={() => console.log('click')} title="팀원 소개" />
+          <Button onClick={() => console.log('click')} title="팀 문화" />
+          <Button onClick={() => console.log('click')} title="프로젝트" />
+        </S.Nav>
+      </S.InnerFrame>
+    </S.Header>
   );
 }

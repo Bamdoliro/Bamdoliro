@@ -1,16 +1,43 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import PretendardBold from '../../Fonts/Pretendard-Bold.woff';
-import PretendardSemiBold from '../../Fonts/Pretendard-SemiBold.woff';
-import PretendardMedium from '../../Fonts/Pretendard-Medium.woff';
+import PretendardBold from '../../fonts/Pretendard-Bold.woff';
+import PretendardSemiBold from '../../fonts/Pretendard-SemiBold.woff';
+import PretendardMedium from '../../fonts/Pretendard-Medium.woff';
 
 const GlobalStyled = createGlobalStyle`
-    // css 초기값 정의
+
+    // reset css
     ${reset}
 
     * {
-        line-height: 135%;
-        letter-spacing: -1%;
+      line-height: 135%;
+      letter-spacing: -1%;
+      box-sizing: border-box;
+      font-family: 'PretendardMedium';
+      }
+
+      a{
+        text-decoration: none;
+        color: inherit;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    input, textarea { 
+      -moz-user-select: auto;
+      -webkit-user-select: auto;
+      -ms-user-select: auto;
+      user-select: auto;
+    }
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
     }
 
     // 폰트

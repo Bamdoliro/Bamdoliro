@@ -11,6 +11,7 @@ export const Header = styled.div`
   justify-content: center;
   height: 60px;
   background-color: ${({ theme }) => theme.color.white};
+  z-index: 1;
 `;
 
 export const InnerFrame = styled.div`

@@ -23,6 +23,7 @@ export const InnerFrame = styled.div`
 export const Logo = styled.img`
   height: 100%;
   width: 161.33px;
+  cursor: pointer;
 `;
 
 export const Nav = styled.nav`

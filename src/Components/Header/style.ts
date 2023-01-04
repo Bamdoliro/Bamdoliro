@@ -1,15 +1,20 @@
 import styled from 'styled-components';
+import theme from '../../shared/styles/theme';
 
 export const Header = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 60px;
-  padding: 0px 180px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.color.white};
 `;
 
 export const InnerFrame = styled.div`
-  width: 100%;
+  width: 81.25%;
   display: flex;
   align-items: center;
   justify-content: space-between;

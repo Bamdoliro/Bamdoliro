@@ -12,7 +12,7 @@ export const Main = styled.div`
   height: 100vh;
   width: 100vw;
   background-image: url(${background});
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 `;
 
@@ -41,4 +41,7 @@ export const Arrow = styled.img`
     /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
 `;
 
-export const ArrowBtn = styled.button``;
+export const ArrowBtn = styled.button`
+  width: 100%;
+  height: 100%;
+`;

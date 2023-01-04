@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import theme from '../../shared/styles/theme';
 
 export const Header = styled.div`
   position: fixed;
@@ -24,6 +23,7 @@ export const InnerFrame = styled.div`
 export const Logo = styled.img`
   height: 100%;
   width: 161.33px;
+  cursor: pointer;
 `;
 
 export const Nav = styled.nav`

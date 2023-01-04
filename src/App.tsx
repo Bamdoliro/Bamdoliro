@@ -1,17 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import * as P from './Pages';
-import GlobalStyled from 'Shared/Styles/GlobalStyle';
+import { ThemeProvider } from 'styled-components';
+import * as P from './pages';
+import theme from './shared/styles/theme';
+import Header from './components/Header';
 
 export default function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="*" element={<P.Main />} />
-        </Routes>
-      </BrowserRouter>
-      <GlobalStyled />
-    </>
+    <ThemeProvider theme={theme}>
+      <Header />
+      <P.Main />
+    </ThemeProvider>
   );
 }

@@ -11,7 +11,11 @@ export default function Main() {
           대서양 한가운데에서 밤돌이로를 외치다.
         </T.LargeTitle>
       </S.TextArea>
-      <S.Arrow src={Arrow} />
+      <S.ArrowBox>
+        <S.ArrowBtn>
+          <S.Arrow src={Arrow} />
+        </S.ArrowBtn>
+      </S.ArrowBox>
     </S.Main>
   );
 }

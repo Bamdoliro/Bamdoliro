@@ -25,7 +25,7 @@ export const TextArea = styled.div`
 
 export const ArrowBox = styled.div`
   position: absolute;
-  bottom: 49px;
+  bottom: 20px;
   width: 75px;
 `;
 
@@ -35,10 +35,10 @@ const motion = keyframes`
 `;
 
 export const Arrow = styled.img`
-  position: absolute;
-  bottom: 49px;
   width: 100%;
   height: 25px;
   animation: ${motion} 0.5s /* 속도 */ ease-in-out 0s
     /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
 `;
+
+export const ArrowBtn = styled.button``;

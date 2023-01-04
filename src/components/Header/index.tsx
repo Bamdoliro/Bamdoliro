@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './style';
 import Logo from '../../assets/logo.svg';
-import Button from '../Common/Button';
+import Button from '../common/Button';
 
 export default function Header() {
   return (

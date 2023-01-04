@@ -12,7 +12,7 @@ export const Main = styled.div`
   height: 100vh;
   width: 100vw;
   background-image: url(${background});
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 `;
 

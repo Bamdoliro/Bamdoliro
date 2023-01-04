@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import theme from '../../shared/styles/theme';
 
 export const Header = styled.div`
   position: fixed;

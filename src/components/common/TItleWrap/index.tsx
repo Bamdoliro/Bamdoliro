@@ -1,15 +1,23 @@
 import * as T from '../../../shared/styles/text';
 import * as S from './style';
 
-export default function TitleWrap() {
+interface TypeProps {
+  title: string;
+  desc: string;
+}
+
+export default function TitleWrap({ title, desc }: TypeProps) {
   return (
     <S.Wrap>
-      <T.SubTitle color="#545F68">프로젝트</T.SubTitle>
+      <T.SubTitle color="#545F68">{title}</T.SubTitle>
       <S.TextArea>
         <T.TitleOne color="#1E2E3D">
-          이걸 신준서가
-          <br />
-          혼자 디자인 다했어요
+          {desc.split('\n').map((dsc) => (
+            <>
+              {dsc}
+              <br />
+            </>
+          ))}
         </T.TitleOne>
       </S.TextArea>
     </S.Wrap>

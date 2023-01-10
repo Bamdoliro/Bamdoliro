@@ -11,6 +11,8 @@ const GlobalStyled = createGlobalStyle`
       letter-spacing: -1%;
       box-sizing: border-box;
       font-family: 'PretendardMedium';
+      margin: 0;
+      padding: 0;
     }
 
     a{

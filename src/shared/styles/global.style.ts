@@ -6,22 +6,16 @@ import PretendardMedium from '../../fonts/Pretendard-Medium.woff';
 
 const GlobalStyled = createGlobalStyle`
 
-    // reset css
-    ${reset}
-
     * {
       line-height: 135%;
       letter-spacing: -1%;
       box-sizing: border-box;
       font-family: 'PretendardMedium';
-      }
-
-      a{
-        text-decoration: none;
-        color: inherit;
     }
-    *{
-        box-sizing: border-box;
+
+    a{
+      text-decoration: none;
+      color: inherit;
     }
     input, textarea { 
       -moz-user-select: auto;

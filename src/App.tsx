@@ -9,6 +9,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <Header />
       <P.Main />
+      <P.TeamMate />
     </ThemeProvider>
   );
 }

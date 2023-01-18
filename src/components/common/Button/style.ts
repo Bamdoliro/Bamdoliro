@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { color } from 'shared/styles/theme';
 
 export const Button = styled.button`
   padding: 8px 16px;
   margin: 0px 14px;
   font-weight: 600;
   font-size: 18px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${color.white};
   border: none;
-  color: ${({ theme }) => theme.color.gray04};
+  color: ${(props) => props.color};
   border-radius: 7.5px;
   outline: none;
   &:hover {

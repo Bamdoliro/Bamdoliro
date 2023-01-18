@@ -37,8 +37,8 @@ const motion = keyframes`
 export const Arrow = styled.img`
   width: 100%;
   height: 25px;
-  animation: ${motion} 0.5s /* 속도 */ ease-in-out 0s
-    /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
+  // animation: ${motion} 0.5s /* 속도 */ ease-in-out 0s
+  //  /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
 `;
 
 export const ArrowBtn = styled.button`

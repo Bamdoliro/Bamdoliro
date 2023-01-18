@@ -3,7 +3,7 @@ import * as S from './style';
 interface PropsType {
   title: string;
   color: string;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick: React.MouseEventHandler<HTMLDivElement>;
 }
 
 export default function Button({ title, color, onClick }: PropsType) {

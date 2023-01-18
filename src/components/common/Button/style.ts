@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { color } from 'shared/styles/theme';
 
-export const Button = styled.button`
+export const Button = styled.div`
   padding: 8px 16px;
-  margin: 0px 14px;
+  margin-right: 14px;
   font-weight: 600;
   font-size: 18px;
   background-color: ${color.white};

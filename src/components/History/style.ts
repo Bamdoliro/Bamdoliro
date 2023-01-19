@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { color } from 'shared/styles/theme';
+import * as T from 'shared/styles/text';
 
 export const History = styled.div`
   display: flex;
@@ -43,7 +44,8 @@ export const HistoryTextFrame = styled.div`
 
 // 한줄
 
-export const Year = styled.div`
+export const Year = styled(T.TitleOne)`
+  color: ${color.gray04};
   position: absolute;
   right: 25%;
   width: 120px;

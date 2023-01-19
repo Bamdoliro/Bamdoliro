@@ -14,6 +14,7 @@ export default function History() {
   const [year, setYear] = useState('2022');
 
   // 이 부분 심각하게 가독성이 안좋음
+  // History 코드리뷰 필요 ~........
   const isTabData =
     year === '2022'
       ? Y.Data22
@@ -65,9 +66,7 @@ export default function History() {
           })}
         </S.TabBar>
         <S.HistoryFrame>
-          <S.Year>
-            <T.TitleOne color={color.gray04}>{year}</T.TitleOne>
-          </S.Year>
+          <S.Year>{year}</S.Year>
           <S.HistoryTextFrame>
             {isTabData &&
               isTabData.map((item, index) => {

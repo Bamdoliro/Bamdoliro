@@ -1,9 +1,11 @@
+/* eslint-disable react/no-array-index-key */
 import TitleWrap from 'components/common/TItleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
 import { useState } from 'react';
 import * as S from './style';
+import HistoryData from '../../data/HistoryData.json';
 
 export default function History() {
   const [isBtnEvent, setBtnEvent] = useState([true, false, false]);
@@ -48,10 +50,13 @@ export default function History() {
           })}
         </S.TabBar>
         <S.HistoryFrame>
-          <HistoryText
-            date="03.03"
-            desc={'밤돌이로 1기 결성\n(김한울, 최태영, 진애란, 진유림)'}
-          />
+          <S.HistoryTextFrame>
+            {HistoryData.map((item, index) => {
+              return (
+                <HistoryText key={index} date={item.date} desc={item.cotent} />
+              );
+            })}
+          </S.HistoryTextFrame>
           {/* 선 */}
           <S.HistoryLine>
             <S.Round />

@@ -3,6 +3,7 @@ import { color } from 'shared/styles/theme';
 
 export const TextFrame = styled.div`
   display: flex;
+  margin-bottom: 18px;
 `;
 
 export const DescFrame = styled.div`

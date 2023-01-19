@@ -34,11 +34,18 @@ export const HistoryFrame = styled.div`
   border: 1px solid black;
 `;
 
+export const HistoryTextFrame = styled.div`
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 // 한줄
 
 export const HistoryLine = styled.div`
   position: absolute;
-  top: 230px;
+  top: 270px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -54,7 +61,7 @@ export const Round = styled.div`
 `;
 
 export const HeightLine = styled.div`
-  height: 400px;
+  height: 500px;
   width: 0px;
   border: 1.5px solid ${color.gray01};
 `;

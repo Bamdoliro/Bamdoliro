@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import { color } from 'shared/styles/theme';
@@ -13,9 +14,10 @@ export default function Header() {
       <S.InnerFrame>
         <S.Logo src={Logo} onClick={() => window.location.reload()} />
         <S.Nav>
-          {ItemData.map((item) => {
+          {ItemData.map((item, index) => {
             return (
               <Button
+                key={index}
                 title={item}
                 color={color.gray04}
                 onClick={() => console.log(item)}

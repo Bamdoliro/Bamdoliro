@@ -4,41 +4,30 @@ import TitleWrap from 'components/common/TItleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
-import { useEffect, useState } from 'react';
-import * as Y from 'data/year';
-import * as T from 'shared/styles/text';
+import { useState } from 'react';
+import HistoryData from 'data/HistoryData.json';
 import * as S from './style';
 
 export default function History() {
   const [isBtnEvent, setBtnEvent] = useState([true, false, false]);
   const [year, setYear] = useState('2022');
-
-  // 이 부분 심각하게 가독성이 안좋음
-  // History 코드리뷰 필요 ~........
-  const isTabData =
-    year === '2022'
-      ? Y.Data22
-      : year === '2023'
-      ? Y.Data23
-      : year === '2024'
-      ? Y.Data24
-      : '';
+  const [index, setIndex] = useState(0);
 
   const TabBarData = [
     {
       year: '2022',
-      name: 'btnOne',
       set: [true, false, false],
+      index: 0,
     },
     {
       year: '2023',
-      name: 'btnTwo',
       set: [false, true, false],
+      index: 1,
     },
     {
       year: '2024',
-      name: 'btnThree',
       set: [false, false, true],
+      index: 2,
     },
   ];
   return (
@@ -53,11 +42,13 @@ export default function History() {
             return (
               <>
                 <Button
+                  key={index}
                   title={item.year}
                   color={isBtnEvent[index] ? color.gray04 : color.gray02}
                   onClick={() => {
                     setBtnEvent(item.set);
                     setYear(item.year);
+                    setIndex(item.index);
                   }}
                 />
                 {index === TabBarData.length - 1 ? '' : <S.WidthLine />}
@@ -68,18 +59,12 @@ export default function History() {
         <S.HistoryFrame>
           <S.Year>{year}</S.Year>
           <S.HistoryTextFrame>
-            {isTabData &&
-              isTabData.map((item, index) => {
-                return (
-                  <HistoryText
-                    key={index}
-                    date={item.date}
-                    desc={item.content}
-                  />
-                );
-              })}
+            {HistoryData.data[index].event.map((item, index) => {
+              return (
+                <HistoryText key={index} date={item.date} desc={item.content} />
+              );
+            })}
           </S.HistoryTextFrame>
-          {/* 선 */}
           <S.HistoryLine>
             <S.Round />
             <S.HeightLine />

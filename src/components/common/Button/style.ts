@@ -6,10 +6,11 @@ export const Button = styled.div`
   margin-right: 14px;
   font-weight: 600;
   font-size: 18px;
-  background-color: ${color.white};
+  background-color: #fff;
   border: none;
-  color: ${(props) => props.color};
+  color: ${(props) => props.color || color.gray02};
   border-radius: 7.5px;
+  cursor: pointer;
   outline: none;
   &:hover {
     background: #f8f8f8;

@@ -1,14 +1,27 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable react/no-array-index-key */
 import TitleWrap from 'components/common/TItleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import * as Y from 'data/year';
+import * as T from 'shared/styles/text';
 import * as S from './style';
-import HistoryData from '../../data/HistoryData.json';
 
 export default function History() {
   const [isBtnEvent, setBtnEvent] = useState([true, false, false]);
+  const [year, setYear] = useState('2022');
+
+  // 이 부분 심각하게 가독성이 안좋음
+  const isTabData =
+    year === '2022'
+      ? Y.Data22
+      : year === '2023'
+      ? Y.Data23
+      : year === '2024'
+      ? Y.Data24
+      : '';
 
   const TabBarData = [
     {
@@ -27,7 +40,6 @@ export default function History() {
       set: [false, false, true],
     },
   ];
-
   return (
     <S.History>
       <S.InnerFrame>
@@ -42,7 +54,10 @@ export default function History() {
                 <Button
                   title={item.year}
                   color={isBtnEvent[index] ? color.gray04 : color.gray02}
-                  onClick={() => setBtnEvent(item.set)}
+                  onClick={() => {
+                    setBtnEvent(item.set);
+                    setYear(item.year);
+                  }}
                 />
                 {index === TabBarData.length - 1 ? '' : <S.WidthLine />}
               </>
@@ -50,12 +65,20 @@ export default function History() {
           })}
         </S.TabBar>
         <S.HistoryFrame>
+          <S.Year>
+            <T.TitleOne color={color.gray04}>{year}</T.TitleOne>
+          </S.Year>
           <S.HistoryTextFrame>
-            {HistoryData.map((item, index) => {
-              return (
-                <HistoryText key={index} date={item.date} desc={item.cotent} />
-              );
-            })}
+            {isTabData &&
+              isTabData.map((item, index) => {
+                return (
+                  <HistoryText
+                    key={index}
+                    date={item.date}
+                    desc={item.content}
+                  />
+                );
+              })}
           </S.HistoryTextFrame>
           {/* 선 */}
           <S.HistoryLine>

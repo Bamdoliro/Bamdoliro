@@ -4,20 +4,22 @@ import { color } from 'shared/styles/theme';
 export const History = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: ${color.white};
 `;
 
 export const InnerFrame = styled.div`
+  padding-top: 90px;
   width: 62.5%;
   height: 100%;
-  border: 1px solid black;
 `;
 
 export const TabBar = styled.div`
   display: flex;
   align-items: center;
+  margin: 34px 0px 30px 0px;
 `;
 
 export const WidthLine = styled.div`
@@ -30,8 +32,6 @@ export const WidthLine = styled.div`
 export const HistoryFrame = styled.div`
   position: relative;
   width: 100%;
-  height: 750px;
-  border: 1px solid black;
 `;
 
 export const HistoryTextFrame = styled.div`
@@ -43,10 +43,16 @@ export const HistoryTextFrame = styled.div`
 
 // 한줄
 
+export const Year = styled.div`
+  position: absolute;
+  right: 25%;
+  width: 120px;
+`;
+
 export const HistoryLine = styled.div`
   position: absolute;
-  top: 270px;
-  left: 50%;
+  top: 195px;
+  left: 80%;
   transform: translate(-50%, -50%);
   display: flex;
   width: 20px;
@@ -61,7 +67,7 @@ export const Round = styled.div`
 `;
 
 export const HeightLine = styled.div`
-  height: 500px;
+  height: 340px;
   width: 0px;
   border: 1.5px solid ${color.gray01};
 `;

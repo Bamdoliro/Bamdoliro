@@ -42,7 +42,7 @@ export default function History() {
                   color={isBtnEvent[index] ? color.gray04 : color.gray02}
                   onClick={() => setBtnEvent(item.set)}
                 />
-                {index === TabBarData.length - 1 ? '' : <S.Line />}
+                {index === TabBarData.length - 1 ? '' : <S.WidthLine />}
               </>
             );
           })}
@@ -52,6 +52,11 @@ export default function History() {
             date="03.03"
             desc={'밤돌이로 1기 결성\n(김한울, 최태영, 진애란, 진유림)'}
           />
+          {/* 선 */}
+          <S.HistoryLine>
+            <S.Round />
+            <S.HeightLine />
+          </S.HistoryLine>
         </S.HistoryFrame>
       </S.InnerFrame>
     </S.History>

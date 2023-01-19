@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { color } from 'shared/styles/theme';
 
 export const TextFrame = styled.div`
   display: flex;

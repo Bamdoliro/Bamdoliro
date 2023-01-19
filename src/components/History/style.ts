@@ -20,7 +20,7 @@ export const TabBar = styled.div`
   align-items: center;
 `;
 
-export const Line = styled.div`
+export const WidthLine = styled.div`
   border: 1px solid ${color.gray02};
   width: 60px;
   border-radius: 2px;
@@ -28,6 +28,33 @@ export const Line = styled.div`
 `;
 
 export const HistoryFrame = styled.div`
+  position: relative;
+  width: 100%;
   height: 750px;
   border: 1px solid black;
+`;
+
+// 한줄
+
+export const HistoryLine = styled.div`
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 20px;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Round = styled.div`
+  border: 10px solid ${color.gray01};
+  width: 20px;
+  border-radius: 50%;
+`;
+
+export const HeightLine = styled.div`
+  height: 400px;
+  width: 0px;
+  border: 1.5px solid ${color.gray01};
 `;

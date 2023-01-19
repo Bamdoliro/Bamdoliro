@@ -26,3 +26,8 @@ export const Line = styled.div`
   border-radius: 2px;
   margin-right: 14px;
 `;
+
+export const HistoryFrame = styled.div`
+  height: 750px;
+  border: 1px solid black;
+`;

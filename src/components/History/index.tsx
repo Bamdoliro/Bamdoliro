@@ -1,5 +1,6 @@
 import TitleWrap from 'components/common/TItleWrap';
 import Button from 'components/common/Button';
+import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
 import { useState } from 'react';
 import * as S from './style';
@@ -46,6 +47,12 @@ export default function History() {
             );
           })}
         </S.TabBar>
+        <S.HistoryFrame>
+          <HistoryText
+            date="03.03"
+            desc={'밤돌이로 1기 결성\n(김한울, 최태영, 진애란, 진유림)'}
+          />
+        </S.HistoryFrame>
       </S.InnerFrame>
     </S.History>
   );

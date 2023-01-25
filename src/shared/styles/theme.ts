@@ -1,12 +1,4 @@
-export type Color =
-  | 'gray04'
-  | 'gray03'
-  | 'gray02'
-  | 'gray01'
-  | 'bamdolblue'
-  | 'white';
-
-const color: { [key in Color]: string } = {
+export const color = {
   gray04: '#1E2E3D',
   gray03: '#545F68',
   gray02: '#919AA3',
@@ -14,5 +6,3 @@ const color: { [key in Color]: string } = {
   bamdolblue: '#47A7FF',
   white: '#FFFFFF',
 };
-
-export default { color };

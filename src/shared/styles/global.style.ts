@@ -6,6 +6,8 @@ import PretendardMedium from '../../fonts/Pretendard-Medium.woff';
 
 const GlobalStyled = createGlobalStyle`
 
+    ${reset};
+
     * {
       line-height: 135%;
       letter-spacing: -1%;

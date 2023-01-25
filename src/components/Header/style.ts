@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { color } from 'shared/styles/theme';
 
 export const Header = styled.div`
   position: fixed;
@@ -9,7 +10,7 @@ export const Header = styled.div`
   display: flex;
   justify-content: center;
   height: 60px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${color.white};
   z-index: 1;
 `;
 

@@ -23,22 +23,23 @@ export const TextArea = styled.div`
   height: 166px;
 `;
 
-export const ArrowBox = styled.div`
-  position: absolute;
-  bottom: 20px;
-  width: 75px;
+const motion = keyframes`
+    0% {padding-bottom: 0px;} /* 처음 위치 */
+	100% {padding-bottom: 20px;} /* 마지막 위치 */
 `;
 
-const motion = keyframes`
-    0% {margin-bottom: 0px;} /* 처음 위치 */
-	100% {margin-bottom: 15px;} /* 마지막 위치 */
+export const ArrowBox = styled.div`
+  position: absolute;
+  bottom: 10px;
+  width: 75px;
+  height: 100px;
+  animation: ${motion} 0.5s /* 속도 */ ease-in-out 0s
+    /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
 `;
 
 export const Arrow = styled.img`
   width: 100%;
   height: 25px;
-  animation: ${motion} 0.5s /* 속도 */ ease-in-out 0s
-    /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
 `;
 
 export const ArrowBtn = styled.button`

@@ -5,6 +5,7 @@ import * as T from '../../../shared/styles/text';
 export const Profile = styled.div`
     display: flex;
     flex-direction: column;
+    width: 278px;
     height: 412px;
     border-radius: 7.5px;
     overflow: hidden;

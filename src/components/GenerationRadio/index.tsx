@@ -1,7 +1,7 @@
 import { useRecoilState } from 'recoil'
-import { radioState } from 'components/atoms';
+import { radioState } from 'atoms';
 import { color } from 'shared/styles/theme';
-import Button from '../Button';
+import Button from '../common/Button';
 
 interface PropsType {
     value: number;

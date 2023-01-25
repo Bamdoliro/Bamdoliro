@@ -4,7 +4,7 @@ import GitHubURLArrow from '../../../assets/gitHubURLArrow.svg';
 interface PropsType {
     src: string;
     name: string;
-    part: "AI" | "BackEnd" | "Design" | "FrontEnd"
+    part: string;
     gitHubURL: string;
 }
 

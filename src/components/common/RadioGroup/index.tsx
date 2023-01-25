@@ -1,20 +1,14 @@
-import { Dispatch, ReactNode, SetStateAction } from 'react';
-import { RadioContext } from '../../context';
+import { ReactNode } from 'react';
 import * as S from './style';
 
-interface PropsType<T> {
+interface PropsType {
     children: ReactNode;
-    name: string;
-    value: T;
-    onChange: Dispatch<SetStateAction<T>>;
 }
 
-export default function RadioGroup<T>({children, ...rest}: PropsType<T>) {
+export default function RadioGroup({children}: PropsType) {
     return (
         <S.RadioGroup>
-            <RadioContext.Provider value={rest}>
-                {children}
-            </RadioContext.Provider>
+            {children}
         </S.RadioGroup>
     )
 }

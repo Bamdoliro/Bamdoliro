@@ -1,27 +1,18 @@
 import { useRecoilState } from 'recoil'
 import { radioState } from 'components/atoms';
-import * as S from './style';
+import Button from '../Button';
 
 interface PropsType {
     value: number;
-    children: string;
 }
 
-export default function GenerationRadio({ value, children }: PropsType) {
+export default function GenerationRadio({ value }: PropsType) {
     const [radioNumber, setRadioNumber] = useRecoilState(radioState);
 
     return (
-        <S.Label>
-            <S.Radio
-                type="radio"
-                value={value}
-                name="generationRadio"
-                checked={value === radioNumber}
-                onChange={() => setRadioNumber(value)}
-            />
-            <S.Paragraph>
-                {children}
-            </S.Paragraph>
-        </S.Label>
+        <Button
+            title={`${value}기`}
+            onClick={() => setRadioNumber(value)}
+        />
     )
 }

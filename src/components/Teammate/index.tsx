@@ -18,7 +18,7 @@ export default function Teammate() {
       <RadioGroup>
         {
           Generation.map(value => (
-            <GenerationRadio key={value} value={value}>{`${value}기`}</GenerationRadio>
+            <GenerationRadio key={value} value={value} />
           ))
         }
       </RadioGroup>

@@ -1,5 +1,6 @@
 import { useRecoilState } from 'recoil'
 import { radioState } from 'components/atoms';
+import { color } from 'shared/styles/theme';
 import Button from '../Button';
 
 interface PropsType {
@@ -11,6 +12,7 @@ export default function GenerationRadio({ value }: PropsType) {
 
     return (
         <Button
+            color={value === radioNumber ? color.gray04 : undefined}
             title={`${value}기`}
             onClick={() => setRadioNumber(value)}
         />

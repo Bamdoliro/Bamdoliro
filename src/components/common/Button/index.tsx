@@ -2,7 +2,7 @@ import * as S from './style';
 
 interface PropsType {
   title: string;
-  color: string;
+  color: string | undefined;
   onClick: React.MouseEventHandler<HTMLDivElement>;
 }
 

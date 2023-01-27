@@ -11,12 +11,15 @@ export interface PropsType {
 export default function SubExplain({IconImage, SubTitle, Explain} : PropsType) {
     return (
         <S.Container>
-            <img 
-                src={require({IconImage})}
-                alt="Two-people" 
+            <S.IconImg 
+                src={IconImage} 
             />
-            <T.TitleTwo>{SubTitle}</T.TitleTwo>
-            <T.Caption>{Explain}</T.Caption>
+            <T.TitleTwo>
+                {SubTitle}
+            </T.TitleTwo>
+            <T.Caption color="#545F68">
+                {Explain}
+            </T.Caption>
         </S.Container>
     );
 }

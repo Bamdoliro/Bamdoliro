@@ -10,7 +10,7 @@ export default function TitleWrap({ title, desc }: TypeProps) {
   return (
     <S.Wrap>
       <T.SubTitle color="#545F68">{title}</T.SubTitle>
-      <S.TextArea>
+      <S.TextArea>  
         <T.TitleOne color="#1E2E3D">
           {desc.split('\n').map((dsc) => (
             <>

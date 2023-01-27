@@ -8,7 +8,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <P.Main />
+      <P.Main/>
+      <P.Culture />
     </ThemeProvider>
   );
 }

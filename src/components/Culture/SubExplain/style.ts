@@ -7,5 +7,12 @@ export const Container = styled.div`
     flex-direction: column;
 
     width: 380px;
-    padding-right: 30px;
+    margin-right: 30px;
+    padding-bottom: 18px;
+`;
+
+export const IconImg = styled.img`
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
 `;

@@ -1,3 +1,4 @@
+// import { color } from 'shared/styles/theme';
 import * as T from '../../../shared/styles/text';
 import * as S from './style';
 
@@ -9,17 +10,15 @@ interface TypeProps {
 export default function TitleWrap({ title, desc }: TypeProps) {
   return (
     <S.Wrap>
-      <T.SubTitle color="#545F68">{title}</T.SubTitle>
-      <S.TextArea>  
-        <T.TitleOne color="#1E2E3D">
-          {desc.split('\n').map((dsc) => (
-            <>
-              {dsc}
-              <br />
-            </>
-          ))}
-        </T.TitleOne>
-      </S.TextArea>
+      {/* <T.SubTitle color={color.gray03}>{title}</T.SubTitle> */}
+      <S.Desc>
+        {desc.split('\n').map((dsc) => (
+          <>
+            {dsc}
+            <br />
+          </>
+        ))}
+      </S.Desc>
     </S.Wrap>
   );
 }

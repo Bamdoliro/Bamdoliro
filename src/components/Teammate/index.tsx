@@ -1,13 +1,14 @@
 import { useRecoilValue } from 'recoil';
-import { radioState } from 'components/atoms';
+import { radioState } from 'atoms';
 import TitleWrap from 'components/common/TItleWrap';
-import RadioGroup from 'components/common/RadioGroup';
-import GenerationRadio from 'components/common/GenerationRadio';
-import ProfileGroup from 'components/common/ProfileGroup';
+import RadioGroup from 'components/RadioGroup';
+import GenerationRadio from 'components/GenerationRadio';
+import ProfileGroup from 'components/ProfileGroup';
 import Profile from 'components/common/Profile'
+import Generation from 'data/generation.json';
+import Profiles from 'data/profiles.json';
 import * as S from './style';
 import * as P from '../../assets/profiles';
-import { Generation, Profiles } from '../../assets/dummyData';
 
 export default function Teammate() {
   const radioNumber = useRecoilValue(radioState);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import { RecoilRoot } from 'recoil';
 import * as P from './pages';
 import Header from './components/Header';

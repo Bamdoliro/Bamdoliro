@@ -7,5 +7,5 @@ export const Wrap = styled.div``;
 export const Desc = styled(T.TitleOne)`
   color: ${color.gray04};
   max-width: 473px;
-  padding-top: 45px;
+  padding-top: 25px;
 `;

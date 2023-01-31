@@ -24,9 +24,11 @@ export const TextWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 45px;
-  max-width: 300px;
+  max-width: 400px;
 `;
 
 export const Text = styled(T.TitleTwo)`
   text-align: left;
+  font-size: 28px;
+  color: ${color.gray04};
 `;

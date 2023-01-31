@@ -1,6 +1,5 @@
 import TitleWrap from 'components/common/TItleWrap';
 import { color } from 'shared/styles/theme';
-import IntroduceData from 'data/Introduce.json';
 import * as S from './style';
 
 function Introduce() {
@@ -13,13 +12,22 @@ function Introduce() {
         />
         <S.TextWrap>
           <S.Text color={color.gray04}>
-            안녕하세요 안녕하세요안녕하세요 안녕하세요안녕하세요 안녕하세요
+            김석진은 아무것도 안해요
+            <br />
+            자꾸 디자인만 시키는데 이거 맞나요
+            <br />저 너무 억울해요 학생청원에 신고해주세요ㅠㅠ
           </S.Text>
           <S.Text color={color.gray04}>
-            안녕하세요 안녕하세요안녕하세요 안녕하세요안녕하세요 안녕하세요
+            김석진은 아무것도 안해요
+            <br />
+            자꾸 디자인만 시키는데 이거 맞나요
+            <br />저 너무 억울해요 학생청원에 신고해주세요ㅠㅠ
           </S.Text>
           <S.Text color={color.gray04}>
-            안녕하세요 안녕하세요안녕하세요 안녕하세요안녕하세요 안녕하세요
+            김석진은 아무것도 안해요
+            <br />
+            자꾸 디자인만 시키는데 이거 맞나요
+            <br />저 너무 억울해요 학생청원에 신고해주세요ㅠㅠ
           </S.Text>
         </S.TextWrap>
       </S.Wrap>

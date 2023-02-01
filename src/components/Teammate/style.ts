@@ -1,18 +1,22 @@
 import styled from 'styled-components';
 
 export const Teammate = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+  height: 1440px;
+  /* max-width: 1202px;
+  min-width: 278px; */
+  margin: 142px auto 0;
+  @media (min-width: 278px) {
+    width: 278px;
+  }
+  @media (min-width: 586px) {
+    width: 586px;
+  }
+  @media (min-width: 894px) {
+    width: 894px;
+  }
+  @media (min-width: 1202px) {
+    width: 1202px;
+  }
 `;
 
-export const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 62.5%;
-  height: 100%;
-`;
-
-export const ProfileWrap = styled.div``;
+export const TextArea = styled.div``;

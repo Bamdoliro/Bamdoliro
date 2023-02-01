@@ -15,30 +15,23 @@ export default function Teammate() {
 
   return (
     <S.Teammate>
-      <S.Wrap>
-        <TitleWrap
-          title="팀원"
-          desc={`이걸 신준서가\n혼자서 디자인 다했어요`}
-        />
-        <RadioGroup>
-          {Generation.map((value) => (
-            <GenerationRadio key={value} value={value} />
-          ))}
-        </RadioGroup>
-        <S.ProfileWrap>
-          <ProfileGroup>
-            {Profiles[radioNumber].map(({ name, part, gitHubURL }) => (
-              <Profile
-                key={gitHubURL}
-                src={P.IronPermMan}
-                name={name}
-                part={part}
-                gitHubURL={gitHubURL}
-              />
-            ))}
-          </ProfileGroup>
-        </S.ProfileWrap>
-      </S.Wrap>
+      <TitleWrap title="팀원" desc={`이걸 신준서가\n혼자서 디자인 다했어요`} />
+      <RadioGroup>
+        {Generation.map((value) => (
+          <GenerationRadio key={value} value={value} />
+        ))}
+      </RadioGroup>
+      <ProfileGroup>
+        {Profiles[radioNumber].map(({ name, part, gitHubURL }) => (
+          <Profile
+            key={gitHubURL}
+            src={P.IronPermMan}
+            name={name}
+            part={part}
+            gitHubURL={gitHubURL}
+          />
+        ))}
+      </ProfileGroup>
     </S.Teammate>
   );
 }

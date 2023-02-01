@@ -9,6 +9,7 @@ export default function App() {
       <Header />
       <P.Main />
       <P.Introduce />
+      <P.History />
       <P.TeamMate />
     </RecoilRoot>
   );

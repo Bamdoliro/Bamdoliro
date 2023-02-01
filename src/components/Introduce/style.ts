@@ -5,7 +5,6 @@ import * as T from 'shared/styles/text';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 138px;
   width: 100vw;
   height: 100vh;
@@ -27,8 +26,9 @@ export const TextWrap = styled.div`
   max-width: 400px;
 `;
 
-export const Text = styled(T.TitleTwo)`
+export const Text = styled.pre`
   text-align: left;
   font-size: 28px;
   color: ${color.gray04};
+  font-family: 'PretendardSemiBold';
 `;

@@ -10,7 +10,6 @@ export default function App() {
       <P.Main />
       <P.Introduce />
       <P.History />
-      <P.TeamMate />
     </RecoilRoot>
   );
 }

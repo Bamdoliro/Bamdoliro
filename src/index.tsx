@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <RecoilRoot>
-    <App />
-    <GlobalStyled />
+      <App />
+      <GlobalStyled />
     </RecoilRoot>
 );

@@ -1,5 +1,3 @@
-/* eslint-disable no-nested-ternary */
-/* eslint-disable react/no-array-index-key */
 import TitleWrap from 'components/common/TItleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
@@ -15,16 +13,19 @@ export default function History() {
 
   const TabBarData = [
     {
+      id: 0,
       year: '2022',
       set: [true, false, false],
       index: 0,
     },
     {
+      id: 1,
       year: '2023',
       set: [false, true, false],
       index: 1,
     },
     {
+      id: 2,
       year: '2024',
       set: [false, false, true],
       index: 2,
@@ -42,7 +43,7 @@ export default function History() {
             return (
               <>
                 <Button
-                  key={index}
+                  key={item.id}
                   title={item.year}
                   color={isBtnEvent[index] ? color.gray04 : color.gray02}
                   onClick={() => {
@@ -61,7 +62,11 @@ export default function History() {
           <S.HistoryTextFrame>
             {HistoryData.data[index].event.map((item, index) => {
               return (
-                <HistoryText key={index} date={item.date} desc={item.content} />
+                <HistoryText
+                  key={item.id}
+                  date={item.date}
+                  desc={item.content}
+                />
               );
             })}
           </S.HistoryTextFrame>

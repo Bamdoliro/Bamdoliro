@@ -1,5 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import { color } from 'shared/styles/theme';
 import * as S from './style';
@@ -7,7 +5,12 @@ import Logo from '../../assets/logo.svg';
 import Button from '../common/Button';
 
 export default function Header() {
-  const ItemData = ['팀 소개', '팀원 소개', '팀 문화', '프로젝트'];
+  const ItemData = [
+    { id: 0, title: '팀 소개' },
+    { id: 1, title: '팀원 소개' },
+    { id: 2, title: '팀 문화' },
+    { id: 3, title: '프로젝트' },
+  ];
 
   return (
     <S.Header>
@@ -17,8 +20,8 @@ export default function Header() {
           {ItemData.map((item, index) => {
             return (
               <Button
-                key={index}
-                title={item}
+                key={item.id}
+                title={item.title}
                 color={color.gray04}
                 onClick={() => console.log(item)}
               />

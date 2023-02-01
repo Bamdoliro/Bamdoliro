@@ -5,12 +5,12 @@ import Header from './components/Header';
 
 export default function App() {
   return (
-      <RecoilRoot>
+      <>
         <Header />
         <P.Main />
         <P.TeamMate />
         <P.History />
         <P.Culture />
-      </RecoilRoot>
+      </>
   );
 }

@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import { color } from '../../shared/styles/theme';
 
 export const Culture = styled.div`
     position: relative;
 
-    margin: 260px 0px 260px 0px;
+    display: flex;
+    align-items: center;
 
+    margin-top: 20%;
     width: 100vw;
     height: 100vh;
+
+    background-color: ${color.white};
 `;
 
 export const Container = styled.div`

@@ -11,9 +11,6 @@ export const Container = styled.div`
 `;
 
 export const Wrap = styled.div`
-  padding-top: 90px;
-  display: flex;
-  flex-direction: column;
   width: 62.5%;
   height: 100%;
 `;

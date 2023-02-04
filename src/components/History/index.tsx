@@ -1,4 +1,4 @@
-import TitleWrap from 'components/common/TItleWrap';
+import TitleWrap from 'components/common/TitleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';

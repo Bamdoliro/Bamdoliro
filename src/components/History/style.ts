@@ -12,7 +12,6 @@ export const History = styled.div`
 `;
 
 export const InnerFrame = styled.div`
-  padding-top: 90px;
   width: 62.5%;
   height: 100%;
 `;

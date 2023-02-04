@@ -1,5 +1,5 @@
 import Project from 'components/common/Project';
-import TitleWrap from 'components/common/TItleWrap';
+import TitleWrap from 'components/common/TitleWrap';
 import ProjectsData from 'data/ProjectsData.json';
 import img from 'assets/project.png';
 import * as S from './style';

@@ -7,8 +7,8 @@ import ProfileGroup from 'components/ProfileGroup';
 import Profile from 'components/common/Profile';
 import Generation from 'data/generation.json';
 import Profiles from 'data/profiles.json';
+import * as P from 'assets/profiles/index';
 import * as S from './style';
-import * as P from '../../assets/profiles';
 
 export default function Teammate() {
   const radioNumber = useRecoilValue(radioState);

@@ -1,22 +1,30 @@
 import styled from 'styled-components';
+import { color } from 'shared/styles/theme';
 
-export const Teammate = styled.div`
-  height: 1440px;
-  /* max-width: 1202px;
-  min-width: 278px; */
-  margin: 142px auto 0;
-  @media (min-width: 278px) {
-    width: 278px;
-  }
-  @media (min-width: 586px) {
-    width: 586px;
-  }
-  @media (min-width: 894px) {
-    width: 894px;
-  }
-  @media (min-width: 1202px) {
-    width: 1202px;
-  }
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: ${color.white};
+`;
+
+export const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 62.5%;
+  height: 100%;
+`;
+
+export const ProfileGroup = styled.div`
+  margin-top: 25px;
+  height: 64%;
+  column-gap: 2%;
+  row-gap: 3%;
+  display: grid;
+  grid-template-rows: 47.5% 47.5%; /* 명시적 2개 행 정의 */
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%; /* 명시적 2개 열 정의 */
 `;
 
 export const TextArea = styled.div``;

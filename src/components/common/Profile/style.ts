@@ -5,20 +5,23 @@ import * as T from '../../../shared/styles/text';
 export const Profile = styled.div`
   display: flex;
   flex-direction: column;
-  width: 278px;
-  height: 412px;
+  width: 100%;
+  height: 100%;
   border-radius: 7.5px;
   overflow: hidden;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  height: 67.5%;
+  width: 100%;
+`;
 
 export const Information = styled.div`
   display: flex;
   flex-direction: column;
-  height: 134px;
-  padding: 18px 18px 12px;
+  height: 32.5%;
   background-color: #f8f9fa;
+  padding: 4px; // 나중에 바꿔야징
 `;
 
 export const Name = styled(T.SubTitle)`

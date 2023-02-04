@@ -24,9 +24,10 @@ export default function App() {
     <RecoilRoot>
       <Header />
       <P.Main />
-      <P.Introduce /> {/* 914 */}
-      <P.History /> {/* 1833 */}
-      <P.Projects /> {/* 2760 */}
+      <P.Introduce />
+      <P.History />
+      <P.Projects />
+      <P.TeamMate />
     </RecoilRoot>
   );
 }

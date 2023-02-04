@@ -1,6 +1,7 @@
 import Project from 'components/common/Project';
 import TitleWrap from 'components/common/TItleWrap';
 import ProjectsData from 'data/ProjectsData.json';
+import img from 'assets/project.png';
 import * as S from './style';
 
 export default function Projects() {
@@ -14,7 +15,12 @@ export default function Projects() {
         <S.ProjectWrap>
           {ProjectsData.map((item) => {
             return (
-              <Project title={item.title} date={item.date} key={item.id} />
+              <Project
+                title={item.title}
+                date={item.date}
+                img={item.img}
+                key={item.id}
+              />
             );
           })}
         </S.ProjectWrap>

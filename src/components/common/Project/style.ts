@@ -23,6 +23,7 @@ export const InfoWrap = styled.div`
   gap: 12px;
   height: 31.25%;
   padding: 0px 30px;
+  border-top: 2px solid #f0f0f0;
 `;
 
 export const InfoTitle = styled(T.TitleTwo)`

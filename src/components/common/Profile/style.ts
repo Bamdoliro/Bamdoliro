@@ -11,31 +11,41 @@ export const Profile = styled.div`
   overflow: hidden;
 `;
 
-export const Image = styled.img`
+export const ProfileFrame = styled.div`
+  padding: 8px;
   height: 67.5%;
   width: 100%;
 `;
 
+export const Image = styled.img`
+  height: 100%;
+  width: 100%;
+`;
+
 export const Information = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 32.5%;
   background-color: #f8f9fa;
-  padding: 4px; // 나중에 바꿔야징
+  padding: 8px;
 `;
 
-export const Name = styled(T.SubTitle)`
+export const Name = styled(T.Caption)`
   color: ${color.gray04};
 `;
 
 export const Part = styled(T.Caption)`
-  margin-top: 12px;
+  margin-top: 6px;
   color: ${color.gray02};
 `;
 
+export const Arrow = styled.img``;
+
 export const GitHubURL = styled.a`
-  margin-top: auto;
-  align-self: flex-end;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
 `;
 
 export const GitHubURLContent = styled(T.Caption)`

@@ -60,7 +60,7 @@ export default function History() {
         <S.HistoryFrame>
           <S.Year>{year}</S.Year>
           <S.HistoryTextFrame>
-            {HistoryData.data[index].event.map((item, index) => {
+            {HistoryData.data[index].event.map((item) => {
               return (
                 <HistoryText
                   key={item.id}

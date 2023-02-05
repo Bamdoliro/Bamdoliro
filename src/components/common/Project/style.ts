@@ -26,7 +26,7 @@ export const InfoWrap = styled.div`
   border-top: 2px solid #f0f0f0;
 `;
 
-export const InfoTitle = styled(T.TitleTwo)`
+export const InfoTitle = styled(T.BodyText)`
   color: ${color.gray04};
 `;
 

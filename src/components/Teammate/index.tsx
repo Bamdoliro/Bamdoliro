@@ -4,9 +4,9 @@ import TitleWrap from 'components/common/TitleWrap';
 import RadioGroup from 'components/RadioGroup';
 import GenerationRadio from 'components/GenerationRadio';
 import Profile from 'components/common/Profile';
-import Generation from 'data/generation.json';
-import Profiles from 'data/profiles.json';
-import * as P from 'assets/profiles/index';
+import Generation from 'data/Generation.json';
+import Profiles from 'data/Profiles.json';
+import Gati from 'assets/gati.svg';
 import * as S from './style';
 
 export default function Teammate() {
@@ -28,7 +28,7 @@ export default function Teammate() {
           {Profiles[radioNumber].map(({ name, part, gitHubURL }) => (
             <Profile
               key={gitHubURL}
-              src={P.IronPermMan}
+              src={Gati}
               name={name}
               part={part}
               gitHubURL={gitHubURL}

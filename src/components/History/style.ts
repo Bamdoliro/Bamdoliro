@@ -12,9 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  padding-top: 90px;
   width: 62.5%;
   height: 100%;
 `;
@@ -22,7 +20,7 @@ export const Wrap = styled.div`
 export const TabBar = styled.div`
   display: flex;
   align-items: center;
-  margin: 34px 0px 30px 0px;
+  margin: 30px 0px 60px 0px;
 `;
 
 export const WidthLine = styled.div`

@@ -25,9 +25,9 @@ export default function App() {
       <Header />
       <P.Main />
       <P.Introduce /> {/* 0 */}
-      <P.History /> {/* 1 */}
-      <P.Projects /> {/* 2 */}
-      <P.TeamMate /> {/* 4 */}
+      <P.History /> {/* 2 */}
+      <P.Projects /> {/* 3 */}
+      <P.TeamMate /> {/* 1 */}
     </RecoilRoot>
   );
 }

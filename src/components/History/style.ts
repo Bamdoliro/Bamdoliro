@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { color } from 'shared/styles/theme';
 import * as T from 'shared/styles/text';
 
-export const History = styled.div`
+export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,10 @@ export const History = styled.div`
   background-color: ${color.white};
 `;
 
-export const InnerFrame = styled.div`
+export const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 62.5%;
   height: 100%;
 `;

@@ -5,7 +5,7 @@ import * as S from './style';
 
 function Introduce() {
   return (
-    <S.Container>
+    <S.Container id="0">
       <S.Wrap>
         <TitleWrap
           title="밤돌이로 팀"

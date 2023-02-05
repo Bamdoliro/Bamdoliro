@@ -32,7 +32,7 @@ export default function History() {
     },
   ];
   return (
-    <S.History>
+    <S.History id="1">
       <S.InnerFrame>
         <TitleWrap
           title="밤돌이로 연혁"

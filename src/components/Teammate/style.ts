@@ -16,12 +16,12 @@ export const Wrap = styled.div`
 
 export const ProfileGroup = styled.div`
   margin-top: 25px;
-  height: 64%;
-  column-gap: 2%;
+  height: 59.3%;
+  column-gap: 2.5%;
   row-gap: 3%;
   display: grid;
-  grid-template-rows: 47.5% 47.5%; /* 명시적 2개 행 정의 */
-  grid-template-columns: 23.5% 23.5% 23.5% 23.5%; /* 명시적 2개 열 정의 */
+  grid-template-rows: 48.2% 48.2%; /* 명시적 2개 행 정의 */
+  grid-template-columns: 23% 23% 23% 23%; /* 명시적 2개 열 정의 */
 `;
 
 export const TextArea = styled.div``;

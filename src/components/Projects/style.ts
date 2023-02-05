@@ -18,9 +18,10 @@ export const Wrap = styled.div`
 export const ProjectWrap = styled.div`
   margin-top: 34px;
   width: 100%;
-  height: 73%;
-  gap: 4%;
+  height: 57.6%;
+  row-gap: 3.5%;
+  column-gap: 1.25%;
   display: grid;
-  grid-template-rows: 45% 45%; /* 명시적 2개 행 정의 */
-  grid-template-columns: 48% 48%; /* 명시적 2개 열 정의 */
+  grid-template-rows: 48.1% 48.1%; /* 명시적 2개 행 정의 */
+  grid-template-columns: 48.75% 48.75%; /* 명시적 2개 열 정의 */
 `;

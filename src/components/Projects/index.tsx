@@ -1,7 +1,7 @@
 import Project from 'components/common/Project';
 import TitleWrap from 'components/common/TitleWrap';
 import ProjectsData from 'data/ProjectsData.json';
-import img from 'assets/project.png';
+import ProjectImg from 'assets/project.svg';
 import * as S from './style';
 
 export default function Projects() {
@@ -18,7 +18,7 @@ export default function Projects() {
               <Project
                 title={item.title}
                 date={item.date}
-                img={item.img}
+                img={ProjectImg}
                 key={item.id}
               />
             );

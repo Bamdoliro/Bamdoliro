@@ -11,16 +11,22 @@ export const Project = styled.div`
   border-radius: 7.5px;
 `;
 
+export const ImgFrame = styled.div`
+  height: 68.75%;
+  width: 100%;
+  padding: 16px;
+`;
+
 export const Img = styled.img`
   width: 100%;
-  height: 68.75%;
+  height: 100%;
 `;
 
 export const InfoWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   height: 31.25%;
   padding: 0px 30px;
   border-top: 2px solid #f0f0f0;

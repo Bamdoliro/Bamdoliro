@@ -9,7 +9,9 @@ interface PropsType {
 export default function Project({ title, date, img }: PropsType) {
   return (
     <S.Project>
-      <S.Img src={img} />
+      <S.ImgFrame>
+        <S.Img src={img} />
+      </S.ImgFrame>
       <S.InfoWrap>
         <S.InfoTitle>{title}</S.InfoTitle>
         <S.InfoDate>{date}</S.InfoDate>

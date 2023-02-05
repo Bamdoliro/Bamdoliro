@@ -12,19 +12,18 @@ export const Container = styled.div`
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   width: 62.5%;
   height: 100%;
 `;
 
-export const ProfileGroup = styled.div`
-  margin-top: 25px;
-  height: 59.3%;
-  column-gap: 2.5%;
-  row-gap: 3%;
+export const ProjectWrap = styled.div`
+  margin-top: 34px;
+  width: 100%;
+  height: 57.6%;
+  row-gap: 3.5%;
+  column-gap: 1.25%;
   display: grid;
-  grid-template-rows: 48.2% 48.2%; /* 명시적 2개 행 정의 */
-  grid-template-columns: 23% 23% 23% 23%; /* 명시적 2개 열 정의 */
+  grid-template-rows: 48.1% 48.1%; /* 명시적 2개 행 정의 */
+  grid-template-columns: 48.75% 48.75%; /* 명시적 2개 열 정의 */
 `;
-
-export const TextArea = styled.div``;

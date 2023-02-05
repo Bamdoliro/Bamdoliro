@@ -1,4 +1,4 @@
-import TitleWrap from 'components/common/TItleWrap';
+import TitleWrap from 'components/common/TitleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
@@ -32,8 +32,8 @@ export default function History() {
     },
   ];
   return (
-    <S.History>
-      <S.InnerFrame>
+    <S.Container id="2">
+      <S.Wrap>
         <TitleWrap
           title="밤돌이로 연혁"
           desc={'밤돌이로의\n발자취를 만나보세요'}
@@ -60,7 +60,7 @@ export default function History() {
         <S.HistoryFrame>
           <S.Year>{year}</S.Year>
           <S.HistoryTextFrame>
-            {HistoryData.data[index].event.map((item, index) => {
+            {HistoryData.data[index].event.map((item) => {
               return (
                 <HistoryText
                   key={item.id}
@@ -75,7 +75,7 @@ export default function History() {
             <S.HeightLine />
           </S.HistoryLine>
         </S.HistoryFrame>
-      </S.InnerFrame>
-    </S.History>
+      </S.Wrap>
+    </S.Container>
   );
 }

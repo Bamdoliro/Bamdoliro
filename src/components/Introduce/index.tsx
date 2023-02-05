@@ -1,11 +1,11 @@
-import TitleWrap from 'components/common/TItleWrap';
+import TitleWrap from 'components/common/TitleWrap';
 import { color } from 'shared/styles/theme';
 import IntroduceData from 'data/IntroduceData.json';
 import * as S from './style';
 
 function Introduce() {
   return (
-    <S.Container>
+    <S.Container id="0">
       <S.Wrap>
         <TitleWrap
           title="밤돌이로 팀"

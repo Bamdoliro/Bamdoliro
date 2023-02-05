@@ -19,6 +19,7 @@ export default function Projects() {
                 title={item.title}
                 date={item.date}
                 img={ProjectImg}
+                url={item.url}
                 key={item.id}
               />
             );

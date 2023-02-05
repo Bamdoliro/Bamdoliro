@@ -1,4 +1,3 @@
-import Gati from 'assets/gati.svg';
 import * as S from './style';
 import GitHubURLArrow from '../../../assets/gitHubURLArrow.svg';
 

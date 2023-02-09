@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 31.6%;
 `;
 
 export const IconImg = styled.img`
@@ -20,4 +20,5 @@ export const SubTitle = styled(T.TitleTwo)`
 
 export const Explain = styled(T.Caption)`
   color: ${color.gray03};
+  max-width: 216px;
 `;

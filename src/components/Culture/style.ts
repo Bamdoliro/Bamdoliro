@@ -19,6 +19,6 @@ export const Wrap = styled.div`
 
 export const SubExplains = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-top: 5.25rem;
 `;

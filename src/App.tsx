@@ -21,13 +21,14 @@ export default function App() {
   }, [position]);
 
   return (
-      <>
-        <Header />
-        <P.Main />
-        <P.Introduce /> {/* 0 */}
-        <P.History /> {/* 2 */}
-        <P.Projects /> {/* 3 */}
-        <P.TeamMate /> {/* 1 */}
-      </>
+    <>
+      <Header />
+      <P.Main />
+      <P.Introduce /> {/* 0 */}
+      <P.History /> {/* 2 */}
+      <P.TeamMate /> {/* 1 */}
+      <P.Culture />
+      <P.Projects /> {/* 3 */}
+    </>
   );
 }

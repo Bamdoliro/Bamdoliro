@@ -9,12 +9,15 @@ const GlobalStyled = createGlobalStyle`
     ${reset};
 
     * {
-      line-height: 135%;
-      letter-spacing: -1%;
-      box-sizing: border-box;
       font-family: 'PretendardMedium';
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    h1,h2,h3,p {
+      line-height: 135%;
+      letter-spacing: -1%;
     }
 
     a{

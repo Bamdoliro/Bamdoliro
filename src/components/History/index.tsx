@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/no-array-index-key */
-import TitleWrap from 'components/common/TItleWrap';
+import TitleWrap from 'components/common/TitleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';

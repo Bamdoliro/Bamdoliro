@@ -1,25 +1,22 @@
-import React from "react";
-import * as S from "./style";
-import * as T from "../../../shared/styles/text";
+import React from 'react';
+import * as S from './style';
 
 export interface PropsType {
-    IconImage: string;
-    SubTitle: string;
-    Explain: string;
+  IconImage: string;
+  SubTitle: string;
+  Explain: string;
 }
 
-export default function SubExplain({IconImage, SubTitle, Explain} : PropsType) {
-    return (
-        <S.Container>
-            <S.IconImg 
-                src={IconImage} 
-            />
-            <T.TitleTwo>
-                {SubTitle}
-            </T.TitleTwo>
-            <T.Caption color="#545F68">
-                {Explain}
-            </T.Caption>
-        </S.Container>
-    );
+export default function SubExplain({
+  IconImage,
+  SubTitle,
+  Explain,
+}: PropsType) {
+  return (
+    <S.Container>
+      <S.IconImg src={IconImage} />
+      <S.SubTitle>{SubTitle}</S.SubTitle>
+      <S.Explain>{Explain}</S.Explain>
+    </S.Container>
+  );
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { color } from 'shared/styles/theme';
 
-export const Button = styled.div`
+export const Button = styled.button`
   padding: 8px 16px;
   margin-right: 14px;
   font-weight: 600;

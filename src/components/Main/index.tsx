@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import * as S from './style';
 import * as T from '../../shared/styles/text';
 import Arrow from '../../assets/arrow.svg';
@@ -13,7 +14,9 @@ export default function Main() {
       </S.TextArea>
       <S.ArrowBox>
         <S.ArrowBtn>
-          <S.Arrow src={Arrow} />
+          <Link to="0" spy smooth>
+            <S.Arrow src={Arrow} />
+          </Link>
         </S.ArrowBtn>
       </S.ArrowBox>
     </S.Main>

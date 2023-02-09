@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { color } from 'shared/styles/theme';
 import * as T from 'shared/styles/text';
 
-export const History = styled.div`
+export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@ export const History = styled.div`
   background-color: ${color.white};
 `;
 
-export const InnerFrame = styled.div`
+export const Wrap = styled.div`
   padding-top: 90px;
   width: 62.5%;
   height: 100%;
@@ -20,7 +20,7 @@ export const InnerFrame = styled.div`
 export const TabBar = styled.div`
   display: flex;
   align-items: center;
-  margin: 34px 0px 30px 0px;
+  margin: 30px 0px 60px 0px;
 `;
 
 export const WidthLine = styled.div`

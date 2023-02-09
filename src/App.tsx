@@ -21,13 +21,13 @@ export default function App() {
   }, [position]);
 
   return (
-    <RecoilRoot>
-      <Header />
-      <P.Main />
-      <P.Introduce /> {/* 0 */}
-      <P.History /> {/* 2 */}
-      <P.Projects /> {/* 3 */}
-      <P.TeamMate /> {/* 1 */}
-    </RecoilRoot>
+      <>
+        <Header />
+        <P.Main />
+        <P.Introduce /> {/* 0 */}
+        <P.History /> {/* 2 */}
+        <P.Projects /> {/* 3 */}
+        <P.TeamMate /> {/* 1 */}
+      </>
   );
 }

@@ -12,7 +12,9 @@ export const Container = styled.div`
 `;
 
 export const Wrap = styled.div`
-  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 70%;
   height: 100%;
 `;
@@ -20,7 +22,7 @@ export const Wrap = styled.div`
 export const TabBar = styled.div`
   display: flex;
   align-items: center;
-  margin: 30px 0px 60px 0px;
+  margin: 30px 0px 30px 0px;
 `;
 
 export const WidthLine = styled.div`
@@ -33,13 +35,13 @@ export const WidthLine = styled.div`
 export const HistoryFrame = styled.div`
   position: relative;
   width: 100%;
+  min-height: 55%;
 `;
 
 export const HistoryTextFrame = styled.div`
-  height: 80%;
+  min-height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 `;
 
 // 한줄

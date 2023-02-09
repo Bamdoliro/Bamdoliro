@@ -2,13 +2,9 @@ import { ReactNode } from 'react';
 import * as S from './style';
 
 interface PropsType {
-    children: ReactNode;
+  children: ReactNode;
 }
 
-export default function RadioGroup({children}: PropsType) {
-    return (
-        <S.RadioGroup>
-            {children}
-        </S.RadioGroup>
-    )
+export default function RadioGroup({ children }: PropsType) {
+  return <S.RadioGroup>{children}</S.RadioGroup>;
 }

@@ -7,7 +7,7 @@ import TwoPeople from '../../assets/two-people.svg';
 
 export default function TeamCulture() {
   return (
-    <S.Container>
+    <S.Container id="3">
       <S.Wrap>
         <TitleWrap title="팀 문화" desc={'우리는 함께\n성장하기를 꿈꿔요'} />
         <S.SubExplains>

@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Wrap = styled.div`
   padding-top: 90px;
-  width: 62.5%;
+  width: 70%;
   height: 100%;
 `;
 

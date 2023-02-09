@@ -13,7 +13,7 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 62.5%;
+  width: 70%;
   height: 100%;
 `;
 

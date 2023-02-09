@@ -25,10 +25,10 @@ export default function App() {
       <Header />
       <P.Main />
       <P.Introduce /> {/* 0 */}
-      <P.History /> {/* 2 */}
-      <P.TeamMate /> {/* 1 */}
-      <P.Culture />
-      <P.Projects /> {/* 3 */}
+      <P.History /> {/* 1 */}
+      <P.TeamMate /> {/* 2 */}
+      <P.Culture /> {/* 3 */}
+      <P.Projects /> {/* 4 */}
     </>
   );
 }

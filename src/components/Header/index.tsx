@@ -12,7 +12,7 @@ export default function Header() {
       <S.InnerFrame>
         <S.Logo src={Logo} onClick={() => window.location.reload()} />
         <S.Nav>
-          {HeaderData.map((item, index) => {
+          {HeaderData.map((item) => {
             return (
               <Link to={item.to} key={item.id} spy smooth>
                 <Button

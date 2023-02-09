@@ -13,7 +13,7 @@ export default function Teammate() {
   const radioNumber = useRecoilValue(radioState);
 
   return (
-    <S.Container id="1">
+    <S.Container id="2">
       <S.Wrap>
         <TitleWrap
           title="팀원"

@@ -1,5 +1,5 @@
 import React from 'react';
-import Culture from 'data/Culture.json';
+import Culture from 'data/cluture.json';
 import TitleWrap from '../common/TitleWrap/index';
 import SubExplain from './SubExplain';
 import * as S from './style';

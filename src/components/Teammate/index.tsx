@@ -4,9 +4,8 @@ import TitleWrap from 'components/common/TitleWrap';
 import RadioGroup from 'components/RadioGroup';
 import GenerationRadio from 'components/GenerationRadio';
 import Profile from 'components/common/Profile';
-import Generation from 'data/Generation.json';
-import Profiles from 'data/Profiles.json';
-import Gati from 'assets/gati.svg';
+import generation from 'data/generation.json';
+import profiles from 'data/profiles.json';
 import * as S from './style';
 
 export default function Teammate() {
@@ -17,21 +16,20 @@ export default function Teammate() {
       <S.Wrap>
         <TitleWrap
           title="팀원"
-          desc={`이걸 신준서가\n혼자서 디자인 다했어요`}
+          desc="내가 아니라 '우리'"
         />
         <RadioGroup>
-          {Generation.map((value) => (
+          {generation.map((value) => (
             <GenerationRadio key={value} value={value} />
           ))}
         </RadioGroup>
         <S.ProfileGroup>
-          {Profiles[radioNumber].map(({ name, part, gitHubURL }) => (
+          {profiles[radioNumber].map(({ name, part, gitHubId }) => (
             <Profile
-              key={gitHubURL}
-              src={Gati}
+              key={gitHubId}
               name={name}
               part={part}
-              gitHubURL={gitHubURL}
+              gitHubId={gitHubId}
             />
           ))}
         </S.ProfileGroup>

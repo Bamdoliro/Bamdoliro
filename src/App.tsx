@@ -1,34 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { RecoilRoot } from 'recoil';
+import React from 'react';
+import ReactFullpage from '@fullpage/react-fullpage';
 import * as P from './pages';
 import Header from './components/Header';
 
 export default function App() {
-  // 현재 좌표를 구할수있슴둥
-  const [position, setPosition] = useState(0);
-  function onScroll() {
-    setPosition(window.scrollY);
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', onScroll);
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    console.log(position);
-  }, [position]);
 
   return (
     <>
-      <Header />
-      <P.Main />
-      <P.Introduce /> {/* 0 */}
-      <P.History /> {/* 1 */}
-      <P.TeamMate /> {/* 2 */}
-      <P.Culture /> {/* 3 */}
-      <P.Projects /> {/* 4 */}
+      <Header/>
+      <ReactFullpage
+        anchors={["main", "introduce", "history", "teammate", "culture", "projects"]}
+        render={({ state, fullpageApi }) => {
+          console.log("render prop change", state, fullpageApi);
+
+          return (
+            <>
+              <div className="section"><P.Main/></div>
+              <div className="section"><P.Introduce/></div>
+              <div className="section"><P.History/></div>
+              <div className="section"><P.TeamMate/></div>
+              <div className="section"><P.Culture/></div>
+              <div className="section"><P.Projects/></div>
+            </>
+          );
+        }}
+      />
     </>
   );
 }

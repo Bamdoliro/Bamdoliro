@@ -11,15 +11,10 @@ export const Profile = styled.div`
   overflow: hidden;
 `;
 
-export const ProfileFrame = styled.div`
-  padding: 8px;
+export const Image = styled.img`
   height: 67.5%;
   width: 100%;
-`;
-
-export const Image = styled.img`
-  height: 100%;
-  width: 100%;
+  object-fit: cover;
 `;
 
 export const Information = styled.div`

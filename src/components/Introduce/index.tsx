@@ -1,6 +1,6 @@
 import TitleWrap from 'components/common/TitleWrap';
 import { color } from 'shared/styles/theme';
-import IntroduceData from 'data/IntroduceData.json';
+import IntroduceData from 'data/introduce.json';
 import * as S from './style';
 
 function Introduce() {

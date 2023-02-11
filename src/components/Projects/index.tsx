@@ -1,6 +1,6 @@
 import Project from 'components/common/Project';
 import TitleWrap from 'components/common/TitleWrap';
-import ProjectsData from 'data/ProjectsData.json';
+import projects from 'data/projects.json';
 import ProjectImg from 'assets/project.svg';
 import * as S from './style';
 
@@ -9,11 +9,11 @@ export default function Projects() {
     <S.Container id="4">
       <S.Wrap>
         <TitleWrap
-          title="밤돌이로 팀"
-          desc={'이걸 신준서가\n혼자서 디자인 다했어요'}
+          title="프로젝트"
+          desc={'오직 밤돌이로만\n할 수 있는'}
         />
         <S.ProjectWrap>
-          {ProjectsData.map((item) => {
+          {projects.map((item) => {
             return (
               <Project
                 title={item.title}

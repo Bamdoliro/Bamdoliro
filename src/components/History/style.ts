@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${color.white};
+  overflow: hidden;
 `;
 
 export const Wrap = styled.div`
@@ -49,15 +50,14 @@ export const HistoryTextFrame = styled.div`
 export const Year = styled(T.TitleOne)`
   color: ${color.gray04};
   position: absolute;
-  right: 25%;
+  right: 45px;
   width: 120px;
 `;
 
 export const HistoryLine = styled.div`
   position: absolute;
-  top: 195px;
+  bottom: 0;
   left: 80%;
-  transform: translate(-50%, -50%);
   display: flex;
   width: 20px;
   flex-direction: column;
@@ -71,7 +71,7 @@ export const Round = styled.div`
 `;
 
 export const HeightLine = styled.div`
-  height: 340px;
-  width: 0px;
+  height: 55vh;
+  width: 0;
   border: 1.5px solid ${color.gray01};
 `;

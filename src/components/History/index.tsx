@@ -3,7 +3,7 @@ import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
 import { useState } from 'react';
-import HistoryData from 'data/HistoryData.json';
+import history from 'data/history.json';
 import * as S from './style';
 
 export default function History() {
@@ -52,15 +52,14 @@ export default function History() {
                     setIndex(item.index);
                   }}
                 />
-                {index === TabBarData.length - 1 ? '' : <S.WidthLine />}
+                {index === TabBarData.length - 1 ? '' : <S.WidthLine/>}
               </>
             );
           })}
         </S.TabBar>
         <S.HistoryFrame>
-          <S.Year>{year}</S.Year>
           <S.HistoryTextFrame>
-            {HistoryData.data[index].event.map((item) => {
+            {history.data[index].event.map((item) => {
               return (
                 <HistoryText
                   key={item.id}
@@ -70,11 +69,12 @@ export default function History() {
               );
             })}
           </S.HistoryTextFrame>
-          <S.HistoryLine>
-            <S.Round />
-            <S.HeightLine />
-          </S.HistoryLine>
         </S.HistoryFrame>
+        <S.HistoryLine>
+          <S.Year>{year}</S.Year>
+          <S.Round/>
+          <S.HeightLine/>
+        </S.HistoryLine>
       </S.Wrap>
     </S.Container>
   );

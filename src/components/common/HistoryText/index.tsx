@@ -10,13 +10,15 @@ interface TypeProps {
 export default function HistoryText({ date, desc }: TypeProps) {
   return (
     <S.TextFrame>
-      <T.BodyText color={color.gray03}>{date}</T.BodyText>
+      <S.DateFrame>
+        <T.BodyText color={color.gray03}>{date}</T.BodyText>
+      </S.DateFrame>
       <S.DescFrame>
         <T.BodyText color={color.gray03}>
           {desc.split('\n').map((dsc) => (
             <>
               {dsc}
-              <br />
+              <br/>
             </>
           ))}
         </T.BodyText>

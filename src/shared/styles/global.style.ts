@@ -17,7 +17,7 @@ const GlobalStyled = createGlobalStyle`
     padding: 0;
   }
 
-  h1, h2, h3, p {
+  h1, h2, h3, p,pre {
     line-height: 135%;
     letter-spacing: -1%;
   }

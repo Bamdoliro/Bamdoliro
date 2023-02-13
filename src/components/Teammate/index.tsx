@@ -4,7 +4,7 @@ import TitleWrap from 'components/common/TitleWrap';
 import RadioGroup from 'components/RadioGroup';
 import GenerationRadio from 'components/GenerationRadio';
 import Profile from 'components/common/Profile';
-import generation from 'data/generation.json';
+import generation from 'data/Generation.json';
 import profiles from 'data/profiles.json';
 import * as S from './style';
 
@@ -14,10 +14,7 @@ export default function Teammate() {
   return (
     <S.Container id="2">
       <S.Wrap>
-        <TitleWrap
-          title="팀원"
-          desc="내가 아니라 '우리'"
-        />
+        <TitleWrap title="팀원" desc="내가 아니라 '우리'" />
         <RadioGroup>
           {generation.map((value) => (
             <GenerationRadio key={value} value={value} />

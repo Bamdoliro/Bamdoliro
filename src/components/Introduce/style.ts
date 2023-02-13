@@ -21,6 +21,7 @@ export const Wrap = styled.div`
 export const TextWrap = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 45px;
   max-width: 400px;
 `;

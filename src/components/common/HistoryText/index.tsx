@@ -2,12 +2,12 @@ import * as T from 'shared/styles/text';
 import { color } from 'shared/styles/theme';
 import * as S from './style';
 
-interface TypeProps {
+interface PropsType {
   date: string;
   desc: string;
 }
 
-export default function HistoryText({ date, desc }: TypeProps) {
+export default function HistoryText({ date, desc }: PropsType) {
   return (
     <S.TextFrame>
       <S.DateFrame>
@@ -18,7 +18,7 @@ export default function HistoryText({ date, desc }: TypeProps) {
           {desc.split('\n').map((dsc) => (
             <>
               {dsc}
-              <br/>
+              <br />
             </>
           ))}
         </T.BodyText>

@@ -2,12 +2,12 @@ import { color } from 'shared/styles/theme';
 import * as T from '../../../shared/styles/text';
 import * as S from './style';
 
-interface TypeProps {
+interface PropsType {
   title: string;
   desc: string;
 }
 
-export default function TitleWrap({ title, desc }: TypeProps) {
+export default function TitleWrap({ title, desc }: PropsType) {
   return (
     <S.Wrap>
       <T.SubTitle color={color.gray03}>{title}</T.SubTitle>

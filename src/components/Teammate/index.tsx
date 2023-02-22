@@ -4,7 +4,7 @@ import TitleWrap from 'components/common/TitleWrap';
 import RadioGroup from 'components/RadioGroup';
 import GenerationRadio from 'components/GenerationRadio';
 import Profile from 'components/common/Profile';
-import generation from 'data/Generation.json';
+import generation from 'data/generation.json';
 import profiles from 'data/profiles.json';
 import * as S from './style';
 

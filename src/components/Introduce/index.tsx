@@ -7,7 +7,7 @@ function Introduce() {
   return (
     <S.Container id="0">
       <S.Wrap>
-        <TitleWrap title="밤돌이로 팀" desc={'그... 저기...\n잠시만여...'} />
+        <TitleWrap title="밤돌이로 팀" desc={"마이크로소프트, space x, 애플\n 밤돌이로 Let's go."} />
         <S.TextWrap>
           {IntroduceData.map((item) => {
             return (

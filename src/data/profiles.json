@@ -3,7 +3,7 @@
   [
     {
       "name": "김한울",
-      "part": "Backend Developer",
+      "part": "Backend",
       "gitHubId": "gimhanul"
     },
     {
@@ -18,24 +18,24 @@
     },
     {
       "name": "이규진",
-      "part": "Backend Developer",
+      "part": "Backend",
       "gitHubId": "leekyukin"
     }
   ],
   [
     {
       "name": "강민제",
-      "part": "Backend Developer",
+      "part": "Backend",
       "gitHubId": "hsem4717"
     },
     {
       "name": "김석진",
-      "part": "Frontend developer",
+      "part": "Frontend",
       "gitHubId": "SEOKKAMONI"
     },
     {
       "name": "변은혜",
-      "part": "Frontend developer",
+      "part": "Frontend",
       "gitHubId": "byuneunhye"
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       "name": "원설아",
-      "part": "Frontend developer",
+      "part": "Frontend",
       "gitHubId": "seola1ne"
     },
     {
       "name": "이명재",
-      "part": "Frontend developer",
+      "part": "Frontend",
       "gitHubId": "arkk200"
     }
   ],

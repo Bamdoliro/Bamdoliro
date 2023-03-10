@@ -18,7 +18,6 @@ export const Wrap = styled.div`
 `;
 
 export const ProjectWrap = styled.div`
-  margin-top: 34px;
   width: 100%;
   height: 57.6%;
   row-gap: 3.5%;

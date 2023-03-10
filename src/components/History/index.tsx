@@ -4,6 +4,7 @@ import HistoryText from 'components/common/HistoryText';
 import { color } from 'shared/styles/theme';
 import { useState } from 'react';
 import history from 'data/history.json';
+import historyTabBar from 'data/historyTabBar.json';
 import * as S from './style';
 
 export default function History() {
@@ -11,26 +12,6 @@ export default function History() {
   const [year, setYear] = useState('2022');
   const [index, setIndex] = useState(0);
 
-  const TabBarData = [
-    {
-      id: 0,
-      year: '2022',
-      set: [true, false, false],
-      index: 0,
-    },
-    {
-      id: 1,
-      year: '2023',
-      set: [false, true, false],
-      index: 1,
-    },
-    {
-      id: 2,
-      year: '2024',
-      set: [false, false, true],
-      index: 2,
-    },
-  ];
   return (
     <S.Container id="1">
       <S.Wrap>
@@ -39,7 +20,7 @@ export default function History() {
           desc={'밤돌이로의\n발자취를 만나보세요'}
         />
         <S.TabBar>
-          {TabBarData.map((item, index) => {
+          {historyTabBar.data?.map((item, index) => {
             return (
               <>
                 <Button
@@ -52,7 +33,7 @@ export default function History() {
                     setIndex(item.index);
                   }}
                 />
-                {index === TabBarData.length - 1 ? '' : <S.WidthLine/>}
+                {index === historyTabBar.data.length - 1 ? '' : <S.WidthLine />}
               </>
             );
           })}
@@ -72,8 +53,8 @@ export default function History() {
         </S.HistoryFrame>
         <S.HistoryLine>
           <S.Year>{year}</S.Year>
-          <S.Round/>
-          <S.HeightLine/>
+          <S.Round />
+          <S.HeightLine />
         </S.HistoryLine>
       </S.Wrap>
     </S.Container>

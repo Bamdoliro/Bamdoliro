@@ -21,6 +21,7 @@ export const Information = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 32.5%;
   background-color: #f8f9fa;
   padding: 8px;
@@ -30,15 +31,18 @@ export const Name = styled(T.Caption)`
   color: ${color.gray04};
 `;
 
+export const InfoBottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
 export const Part = styled(T.Caption)`
-  margin-top: 6px;
   color: ${color.gray02};
 `;
 
 export const Arrow = styled.img``;
 
 export const GitHubURL = styled.a`
-  position: absolute;
   right: 8px;
   bottom: 8px;
 `;

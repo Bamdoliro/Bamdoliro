@@ -26,9 +26,9 @@ export const InfoWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 3px;
   height: 31.25%;
-  padding: 0px 30px;
+  padding: 0px 24px;
   border-top: 2px solid #f0f0f0;
 `;
 

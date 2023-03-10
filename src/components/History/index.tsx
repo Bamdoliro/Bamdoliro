@@ -20,7 +20,7 @@ export default function History() {
           desc={'밤돌이로의\n발자취를 만나보세요'}
         />
         <S.TabBar>
-          {historyTabBar.data?.map((item, index) => {
+          {historyTabBar.map((item, index) => {
             return (
               <>
                 <Button
@@ -33,7 +33,7 @@ export default function History() {
                     setIndex(item.index);
                   }}
                 />
-                {index === historyTabBar.data.length - 1 ? '' : <S.WidthLine />}
+                {index === historyTabBar.length - 1 ? '' : <S.WidthLine />}
               </>
             );
           })}

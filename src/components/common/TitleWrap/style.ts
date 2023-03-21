@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import * as T from 'shared/styles/text';
-import { color } from 'shared/styles/theme';
+import * as T from 'styles/text';
+import { color } from 'styles/theme';
 
 export const Wrap = styled.div``;
 

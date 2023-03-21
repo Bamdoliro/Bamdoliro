@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { color } from 'shared/styles/theme';
-import * as T from 'shared/styles/text';
+import { color } from 'styles/theme';
+import * as T from 'styles/text';
 
 export const Project = styled.div`
   display: flex;

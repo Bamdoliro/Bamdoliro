@@ -1,4 +1,4 @@
-import Introduce from 'components/Introduce/index';
+import Introduce from 'components/ui/Introduce/index';
 
 function IntroducePage() {
   return <Introduce />;

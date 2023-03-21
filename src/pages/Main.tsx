@@ -1,4 +1,4 @@
-import MainPage from '../components/Main/index';
+import MainPage from 'components/ui/Main/index';
 
 export default function Main() {
   return <MainPage />;

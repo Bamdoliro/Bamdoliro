@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 70%;
   height: 100%;
 `;

@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 70%;
   height: 100%;
 `;

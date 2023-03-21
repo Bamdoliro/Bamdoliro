@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import background from 'assets/background01.svg';
+import background from 'assets/background.svg';
 
 export const Main = styled.div`
   position: relative;
@@ -14,6 +14,7 @@ export const Main = styled.div`
   background-image: url(${background});
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
 `;
 
 export const TextArea = styled.div`
@@ -30,7 +31,7 @@ const motion = keyframes`
 
 export const ArrowBox = styled.div`
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
   width: 75px;
   height: 100px;
   animation: ${motion} 0.5s /* 속도 */ ease-in-out 0s

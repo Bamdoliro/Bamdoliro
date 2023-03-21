@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 70%;
   height: 100%;
 `;
@@ -20,6 +20,7 @@ export const Wrap = styled.div`
 export const ProjectWrap = styled.div`
   width: 100%;
   height: 57.6%;
+  margin-top: 40px;
   row-gap: 3.5%;
   column-gap: 1.25%;
   display: grid;

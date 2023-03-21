@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import Header from 'components/ui/Header';
+import Header from 'components/common/Header';
 import * as P from './pages';
 
 export default function App() {

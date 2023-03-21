@@ -1,9 +1,9 @@
 import React from 'react';
-import Culture from 'data/cluture.json';
-import TitleWrap from '../common/TitleWrap/index';
+import Culture from 'datas/cluture.json';
+import TwoPeople from 'assets/two-people.svg';
+import TitleWrap from 'components/common/TitleWrap/index';
 import SubExplain from './SubExplain';
 import * as S from './style';
-import TwoPeople from '../../assets/two-people.svg';
 
 export default function TeamCulture() {
   return (

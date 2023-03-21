@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { RecoilRoot } from 'recoil';
-import GlobalStyled from './shared/styles/global.style';
+import GlobalStyled from 'styles/global.style';
 import App from './App';
 
 const root = ReactDOM.createRoot(

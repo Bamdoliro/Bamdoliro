@@ -1,15 +1,15 @@
 import React from 'react';
-import { color } from 'shared/styles/theme';
-import header from 'data/header.json';
+import { color } from 'styles/theme';
+import header from 'datas/header.json';
+import Button from 'components/common/Button';
+import Logo from 'assets/logo.svg';
 import * as S from './style';
-import Logo from '../../assets/logo.svg';
-import Button from '../common/Button';
 
 export default function Header() {
   return (
     <S.Header>
       <S.InnerFrame>
-        <S.Logo src={Logo} onClick={() => window.location.reload()}/>
+        <S.Logo src={Logo} onClick={() => window.location.reload()} />
         <S.Nav>
           {header.map((item) => {
             return (

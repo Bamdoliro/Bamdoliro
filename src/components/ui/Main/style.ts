@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import background from '../../assets/background01.svg';
+import background from 'assets/background01.svg';
 
 export const Main = styled.div`
   position: relative;

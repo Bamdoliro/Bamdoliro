@@ -1,5 +1,5 @@
-import { color } from 'shared/styles/theme';
-import * as T from '../../../shared/styles/text';
+import { color } from 'styles/theme';
+import * as T from 'styles/text';
 import * as S from './style';
 
 interface PropsType {

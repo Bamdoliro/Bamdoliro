@@ -1,7 +1,7 @@
 import React from 'react';
+import * as T from 'styles/text';
+import Arrow from 'assets/arrow.svg';
 import * as S from './style';
-import * as T from '../../shared/styles/text';
-import Arrow from '../../assets/arrow.svg';
 
 export default function Main() {
   return (

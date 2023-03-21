@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from 'shared/styles/theme';
+import { color } from 'styles/theme';
 
 export const Button = styled.button`
   padding: 8px 16px;

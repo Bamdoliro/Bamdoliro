@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import PretendardBold from '../../fonts/Pretendard-Bold.woff';
-import PretendardSemiBold from '../../fonts/Pretendard-SemiBold.woff';
-import PretendardMedium from '../../fonts/Pretendard-Medium.woff';
+import PretendardBold from 'fonts/Pretendard-Bold.woff';
+import PretendardSemiBold from 'fonts/Pretendard-SemiBold.woff';
+import PretendardMedium from 'fonts/Pretendard-Medium.woff';
 
 const GlobalStyled = createGlobalStyle`
 

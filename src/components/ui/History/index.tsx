@@ -1,10 +1,10 @@
 import TitleWrap from 'components/common/TitleWrap';
 import Button from 'components/common/Button';
 import HistoryText from 'components/common/HistoryText';
-import { color } from 'shared/styles/theme';
+import { color } from 'styles/theme';
 import { useState } from 'react';
-import history from 'data/history.json';
-import historyTabBar from 'data/historyTabBar.json';
+import history from 'datas/history.json';
+import historyTabBar from 'datas/historyTabBar.json';
 import * as S from './style';
 
 export default function History() {

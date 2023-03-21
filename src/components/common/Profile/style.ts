@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { color } from 'shared/styles/theme';
-import * as T from '../../../shared/styles/text';
+import { color } from 'styles/theme';
+import * as T from 'styles/text';
 
 export const Profile = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const Name = styled(T.Caption)`
 export const InfoBottom = styled.div`
   display: flex;
   justify-content: space-between;
-`
+`;
 
 export const Part = styled(T.Caption)`
   color: ${color.gray02};

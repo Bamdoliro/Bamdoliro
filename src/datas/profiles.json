@@ -55,5 +55,35 @@
     }
   ],
   [
+    {
+      "name": "안예성",
+      "part": "Backend",
+      "gitHubId": "anys34"
+    },
+    {
+      "name": "최성훈",
+      "part": "Frontend",
+      "gitHubId": "seonghoon07"
+    },
+    {
+      "name": "박강원",
+      "part": "Designer",
+      "gitHubId": "akns27"
+    },
+    {
+      "name": "배재현",
+      "part": "Backend",
+      "gitHubId": "cabbage16"
+    },
+    {
+      "name": "김예진",
+      "part": "Designer",
+      "gitHubId": "Yej1n"
+    },
+    {
+      "name": "이지우",
+      "part": "Frontend",
+      "gitHubId": "E-jiwoo"
+    }
   ]
 ]
